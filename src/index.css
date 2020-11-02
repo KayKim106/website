@@ -1,13 +1,32 @@
+:root {
+  --container-white-background: white;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Helvetica;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 100%;
+  height: 100%;
+  font-size: 15px;
+  /* overflow: hidden; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  text-decoration: none;
+  list-style: none;
 }
+@import "./styles/ViewContainer.css";
+@import "./styles/HeaderContainer.css";
+@import "./styles/HomeContainer.css";
+@import "./styles/AboutContainer.css";
+@import "./styles/ProjectContainer.css";
+@import "./styles/Card.css";
+@import "./styles/ContactContainer.css";
+@import "./styles/InfoCard.css";
+@import "./styles/FooterContainer.css";
+@import "./styles/SkillContainer.css";
+@import "./styles//AsideContainer.css"

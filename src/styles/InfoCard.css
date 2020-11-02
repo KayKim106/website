@@ -1,0 +1,40 @@
+:root {
+  --padding: 1rem;
+  --margin: 1rem;
+}
+.contact-info-card {
+  background: #ffffff;
+  width: 100%;
+  min-width: 225px;
+  max-width: 400px;
+  /* padding: var(--padding);*/
+  margin: var(--margin) 0; 
+  border-radius: 2px;
+}
+.contact-info-card-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  min-height: 3rem;
+  max-height: 5rem;
+  align-items: center;
+  display: flex;
+}
+.contact-info-card-text {
+  min-height: 5rem;
+  max-height: 8rem;
+  /* align-items: center; */
+  display: flex;
+}
+
+@media screen and (max-width: 750px) {
+  .section-contact {
+    height: calc(100vh - 50px);
+  }
+  .contact-form-left {
+    width: 100%;
+    margin: var(--margin);
+  }
+  .contact-info-card{
+    margin:var(--margin) 0;
+  }
+}

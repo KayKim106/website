@@ -1,0 +1,26 @@
+.section-project {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  /* height: auto; */
+  height: calc(100vh - (80px + 2rem));
+  margin-right: 1rem;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  width:100%;
+  /* background:green; */
+  z-index: -1;
+}
+@media screen and (max-width: 750px) {
+  .section-project {
+    margin: 0;
+    flex-direction: column;
+    height: auto;
+  }
+}

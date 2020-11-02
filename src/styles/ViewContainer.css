@@ -1,0 +1,14 @@
+:root {
+  --container-padding: 1rem;
+  --container-margin: 1rem;
+}
+section {
+  padding: 1rem 1rem 1rem 0;
+}
+
+
+@media screen and (max-width: 750px) {
+  section {
+    padding: 1rem 0;
+  }
+}

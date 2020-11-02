@@ -1,0 +1,152 @@
+:root {
+  --font-size: 1rem;
+  --padding: 1rem;
+  --margin: 1rem;
+}
+.main-wrapper {
+  display: flex;
+}
+.section-home {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - (80px + 2rem));
+}
+
+.home-banner {
+  width: 100%;
+  z-index: -1;
+  /* display: flex;
+  align-items: center; */
+}
+.centerText::after,
+.centerText::before {
+  content: "|";
+  padding: 0 1rem;
+}
+.home-banner-text {
+  /* background: coral; */
+  /* width: 50%; */
+  height: 50%;
+  /* transform: translateY(50%); */
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.banner-text-header {
+  font-size: 5rem;
+  font-weight: bold;
+  flex: 1;
+}
+.banner-text-body {
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  flex: 1;
+}
+.banner-text-nav {
+  flex: 1;
+}
+
+.home-main-wrapper {
+  margin-left: calc(100px + 2rem);
+  width: 100%;
+}
+
+.about-face {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: var(--margin);
+  border: 1px solid lightgray;
+}
+
+.home-overlay-text {
+  height: calc(100vh - (80px + 2rem));
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.home-overlay-article {
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  display: flex;
+  top: 20%;
+  left: 20%;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-overlay-image {
+  height: calc(100vh - (80px + 2rem));
+  /* width: calc(100% - (100px + 3rem)); */
+  background: transparent;
+  right: 1rem;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  padding-top:1rem;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 750px) {
+  .section-home {
+    flex-direction: column-reverse;
+    padding-top: 0;
+  }
+
+  /* Home */
+  .home-main-wrapper {
+    margin: 0 1rem;
+  }
+  .sci-icons {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .home-banner-text {
+    height: 100%;
+    width: 100%;
+    transform: none;
+    padding: 0;
+  }
+  .home-banner {
+    height: 100%;
+  }
+
+  .banner-text-header,
+  .banner-text-body,
+  .home-banner-text {
+    text-align: center;
+  }
+
+  .home-overlay-text {
+    height: calc(100% + (50px - 1rem));
+    display: flex;
+    align-items: center;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .home-overlay-text article {
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .home-overlay-image {
+    width: 100%;
+    height: calc(100% - 50px);
+    right: 0;
+    top: 50px;
+    margin: 0;
+    padding-top:0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-wrapper {
+    /* width: calc(100% - (100px + 2rem)); */
+  }
+}
