@@ -31,7 +31,7 @@ function App() {
         document.body.offsetHeight
       ) {
         asideBar.style.height = `calc(100vh - (${
-          header.clientHeight + footer.clientHeight
+          header.clientHeight + footer.clientHeight + 16
         }px))`;
         asideBar.style.transition = "height 250ms";
         asideBar.style.marginTop = "0";

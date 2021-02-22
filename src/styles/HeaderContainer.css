@@ -14,6 +14,7 @@ a {
 .header-container {
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 header > section {
   padding: 0 1rem;
@@ -70,6 +71,10 @@ li:hover a {
   color: var(--accent-color);
   display: none;
   cursor: pointer;
+}
+.navBarToggleBtn:hover{
+  transition: 250ms linear;
+  color:black;
 }
 
 @media screen and (max-width: 750px) {

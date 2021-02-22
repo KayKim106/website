@@ -26,18 +26,26 @@
 }
 .about-text-wrapper,
 .about-image-wrapper {
-  padding: 5em;
+  padding: 2em;
   max-width: 500px;
   max-height: 500px;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
-
+  flex: 1;
 }
 
 .about-image-wrapper {
   /* flex: 1; */
-  background: lightcoral;
+
+  opacity: 0;
+}
+.about-image-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  z-index: -1;
 }
 
 .about-header {
@@ -76,5 +84,10 @@
 
   .section-about {
     height: calc(100vh - (50px));
+  }
+}
+@media screen and (max-width: 750px) {
+  .about-text-wrapper {
+    padding: 2rem 1rem;
   }
 }

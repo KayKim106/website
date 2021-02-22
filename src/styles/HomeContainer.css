@@ -5,6 +5,7 @@
 }
 .main-wrapper {
   display: flex;
+  opacity: 0;
 }
 .section-home {
   display: flex;
@@ -17,6 +18,13 @@
   z-index: -1;
   /* display: flex;
   align-items: center; */
+}
+.home-banner-sub-text {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  font-size: 1.78rem;
+  margin: 0;
 }
 .centerText::after,
 .centerText::before {
@@ -65,6 +73,7 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  opacity: 0;
 }
 .home-overlay-article {
   max-width: 450px;
@@ -85,12 +94,53 @@
   top: 80px;
   display: flex;
   justify-content: center;
-  padding-top:1rem;
+  padding-top: 1rem;
 }
-
+.home-title {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.home-banner-name {
+  display: flex;
+  align-items: center;
+}
+.home-banner-name h1 {
+  font-size: 6rem;
+  margin: 0 0 0 1rem;
+}
+.home-banner-name i {
+  font-size: 3rem;
+}
 @media screen and (max-width: 768px) {
 }
 
+@media screen and (max-width: 500px) {
+  .home-banner-name h1 {
+    font-size: 4rem;
+  }
+  .home-banner-name i {
+    font-size: 2rem;
+  }
+  .home-title {
+    font-size: 1.5rem;
+  }
+  .home-banner-sub-text {
+    font-size: 1rem;
+    justify-content: center;
+  }
+  .sci-icons {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .home-overlay-article {
+    width: 100%;
+    text-align: center;
+  }
+  .home-banner-name {
+    justify-content: center;
+    margin: 2rem 0;
+  }
+}
 @media screen and (max-width: 750px) {
   .section-home {
     flex-direction: column-reverse;
@@ -99,12 +149,10 @@
 
   /* Home */
   .home-main-wrapper {
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
+    margin: 0;
   }
-  .sci-icons {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+ 
 
   .home-banner-text {
     height: 100%;
@@ -123,11 +171,12 @@
   }
 
   .home-overlay-text {
-    height: calc(100% + (50px - 1rem));
+    height: calc(100vh - 50px);
     display: flex;
     align-items: center;
     color: white;
     mix-blend-mode: difference;
+    top: 5%;
   }
   .home-overlay-text article {
     left: 0;
@@ -136,15 +185,18 @@
   }
 
   .home-overlay-image {
-    width: 100%;
+    /* width: 100%; */
     height: calc(100% - 50px);
     right: 0;
     top: 50px;
     margin: 0;
-    padding-top:0;
+    padding-top: 0;
+  }
+
+  .section-home {
+    height: calc(100vh - 50px);
   }
 }
-
 @media screen and (max-width: 1024px) {
   .main-wrapper {
     /* width: calc(100% - (100px + 2rem)); */

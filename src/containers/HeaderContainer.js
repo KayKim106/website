@@ -24,7 +24,10 @@ const HeaderContainer = ({ containerName, windowWidth }) => {
         </div>
         <ul
           className="navBarMenu"
-          style={{ display: menuToggle ? "none" : "flex" }}
+          style={{
+            display: menuToggle ? "none" : "flex",
+            transition: "250ms linear",
+          }}
         >
           {menuList &&
             menuList.map((item, i) => {
